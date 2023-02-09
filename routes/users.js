@@ -9,6 +9,7 @@ router.use(authentication)
 router.get('/', UserController.fetchLoginUser)
 router.patch('/status', UserController.updateStatus)
 router.get('/midtrans', UserController.midtransToken)
+router.post('/spotify', UserController.spotify)
 
 
 module.exports = router
